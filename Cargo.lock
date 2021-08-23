@@ -670,6 +670,15 @@ dependencies = [
 
 [[package]]
 name = "itertools"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
+dependencies = [
+ "either",
+]
+
+[[package]]
+name = "itertools"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "37d572918e350e82412fe766d24b15e6682fb2ed2bbe018280caa810397cb319"
@@ -908,7 +917,7 @@ dependencies = [
  "glyph_brush",
  "hashbrown",
  "impls",
- "itertools",
+ "itertools 0.10.0",
  "jemallocator",
  "lazy_static",
  "lyon",
@@ -916,6 +925,7 @@ dependencies = [
  "notosans",
  "palette",
  "parking_lot",
+ "rutter_layout",
  "stretch",
  "vulkano",
  "vulkano-shaders",
@@ -1410,6 +1420,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "rutter_layout"
+version = "0.1.0"
+dependencies = [
+ "smallvec",
+ "tinyset",
+]
+
+[[package]]
 name = "same-file"
 version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1598,6 +1616,16 @@ dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
  "syn 1.0.68",
+]
+
+[[package]]
+name = "tinyset"
+version = "0.4.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "eb55cb9d7b901da75ec6f4a95537b28d295121c7b999224ebb4f34541625aff2"
+dependencies = [
+ "itertools 0.9.0",
+ "rand",
 ]
 
 [[package]]
