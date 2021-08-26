@@ -1,3 +1,4 @@
+/*
 use lyon::{
     lyon_tessellation::path::geom::Point,
     tessellation::{path::path::Builder, LineCap, StrokeOptions},
@@ -288,3 +289,5 @@ fn main() {
         },
     );
 }
+*/
+fn main() {}
